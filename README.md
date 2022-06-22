@@ -1,2 +1,2 @@
-# Skincare
-![Skincare](https://github.com/Edanriell/oldProjects-2/blob/master/AnimatedText/skincare.png?raw=true)
+# Diamaint
+![Diamaint](https://github.com/Edanriell/Diamaint/blob/master/Diamaint.png?raw=true)

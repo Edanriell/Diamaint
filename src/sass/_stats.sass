@@ -1,0 +1,119 @@
+.Stats
+  padding-top: 131px
+  &-Wrapper
+  &-Header
+    margin-bottom: -90px
+  &-HeaderText
+    text-align: center
+    font-family: "PlayfairDisplay-Regular"
+    font-weight: 400
+    color: rgba(214, 212, 231, 1)
+    font-size: 33rem
+    line-height: 305px
+  &-Content
+    display: flex
+    padding-top: 176px
+    padding-bottom: 58px
+  &-ContentWrapper
+    background-color: rgba(237, 236, 246, 1)
+    position: relative
+    z-index: -1
+    &::before
+      content: ""
+      position: absolute
+      background-image: url("../img/dandelion.png")
+      background-repeat: no-repeat
+      background-position: right 0
+      background-size: 638px 1196px
+      width: 638px
+      height: 1196px
+      top: 140px
+      right: 0
+      z-index: -1
+.ImageGroup
+  position: relative
+  z-index: 1
+  &-MainImage
+    vertical-align: middle
+    object-fit: none
+    width: 885px
+    height: 830px
+    z-index: 1
+  &-FirstBerry
+    vertical-align: middle
+    position: absolute
+    left: 568px
+    top: 534px
+    animation: FloatingBerriesAnimation 6s ease-in-out infinite
+    animation-delay: 0.2s
+    z-index: 1
+  &-SecondBerry
+    vertical-align: middle
+    position: absolute
+    left: 668px
+    top: 564px
+    animation: FloatingBerriesAnimation 6s ease-in-out infinite
+    animation-delay: 0.8s
+    z-index: 1
+  &-ThirdBerry
+    vertical-align: middle
+    position: absolute
+    left: 578px
+    top: 624px
+    animation: FloatingBerriesAnimation 6s ease-in-out infinite
+    animation-delay: 0.6s
+    z-index: 1
+  &::before
+    content: ""
+    position: absolute
+    top: -30px
+    left: 100px
+    width: 546px
+    height: 546px
+    background-color: rgba(214, 212, 231, 1)
+    border-radius: 100%
+    z-index: -1
+.Statistics
+  padding-top: 71px
+  p:nth-of-type(2)
+    margin-top: 60px
+  &-Header
+    font-family: "Montserrat-Medium"
+    font-weight: 500
+    font-size: 1.6rem
+    line-height: 29px
+    letter-spacing: 0.3em
+    text-transform: uppercase
+    color: rgba(165, 163, 185, 1)
+    max-width: 340px
+    margin-bottom: 20px
+  &-Text
+    display: flex
+    flex-direction: column
+    &_fontSize_huge
+      font-family: "Montserrat-Light"
+      font-weight: 300
+      font-size: 12rem
+      line-height: 131px
+      color: rgba(81, 80, 118, 1)
+    &_fontSize_big
+      font-family: "Montserrat-ExtraLight"
+      font-weight: 200
+      font-size: 7rem
+      line-height: 77px
+      color: rgba(81, 80, 118, 1)
+    &_fontSize_small
+      font-family: "Montserrat-Medium"
+      font-weight: 500
+      font-size: 1.6rem
+      line-height: 32px
+      color: rgba(136, 135, 148, 1)
+      max-width: 460px
+
+@keyframes FloatingBerriesAnimation
+  0% 
+    transform: translatey(0px) rotate(0deg)
+  50% 
+    transform: translatey(50px) rotate(30deg)
+  100% 
+    transform: translatey(0px) rotate(0deg)

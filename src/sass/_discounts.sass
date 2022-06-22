@@ -1,0 +1,234 @@
+.Discounts
+  padding-top: 180px
+  &-Content
+    position: relative
+  &-ContentRow
+    display: flex
+    justify-content: space-between
+  &-ContentColumn
+    display: flex
+    flex-direction: column
+  &-Header
+    text-align: right
+    margin-right: auto
+    margin-left: 0
+    margin-bottom: 100px
+    margin-top: 23px
+  &-Text
+    font-size: 1.8rem
+    line-height: 36px
+    color: rgba(136, 135, 148, 1)
+    max-width: 340px
+.DiscountedProductsSliderControls
+  display: flex
+  align-items: center
+  margin-top: auto
+  &-NextProduct
+    width: 74px
+    height: 74px
+    border-radius: 100%
+    background: no-repeat url("../img/icons/sliderArrow.svg") center transparent
+    margin-left: 19px
+  &-PreviousProduct
+    width: 74px
+    height: 74px
+    border-radius: 100%
+    background: no-repeat url("../img/icons/sliderArrow.svg") center transparent
+    transform: rotate(-180deg)
+  &-ButtonDisabledPrevious
+    opacity: 0.4
+    transition: all 0.1s ease-in-out
+  &-ButtonDisabledNext
+    opacity: 0.4
+    transition: all 0.1s ease-in-out
+  &-ButtonPrev
+    cursor: pointer
+    transition: all 0.1s ease-in-out
+  &-ButtonNext
+    cursor: pointer
+    transition: all 0.1s ease-in-out
+.DiscountedProductsSlider
+  position: relative
+  width: 810px
+  height: 521px
+  &-Wrapper
+    position: relative
+    width: inherit
+    height: inherit
+  &-Item
+    width: inherit
+    height: inherit
+  &-ItemWrapper
+    width: inherit
+    height: inherit
+.DiscountedProductsSliderUnderlay
+  position: absolute
+  width: 810px
+  height: 521px
+  left: 0
+  top: 0
+  background-color: #515076
+  z-index: -1
+  transition: all 0.2s ease-in-out
+  &-Text
+    font-family: "Montserrat-Medium"
+    font-weight: 500
+    font-size: 1.3rem
+    line-height: 40px
+    letter-spacing: 0.17em
+    text-transform: uppercase
+    color: rgba(255, 255, 255, 1)
+    writing-mode: vertical-rl
+    transform: rotate(-180deg)
+    margin-top: 248px
+    display: block
+.DiscountedProductsSliderContent
+  position: absolute
+  width: 810px
+  height: 521px
+  left: 0
+  top: 0
+  background-color: rgba(247, 247, 250, 1)
+  display: flex
+  z-index: 1
+  box-sizing: border-box
+  padding-left: 62px
+  justify-content: space-between
+  &-MainContent
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding-top: 58px
+    padding-bottom: 72px
+    box-sizing: border-box
+    align-items: flex-start
+  &-SlideNumerationWrapper
+    position: relative
+    width: 62px
+    height: 62px
+    border-radius: 100%
+    background-color: rgba(237, 236, 246, 1)
+  &-SlideNumeration
+    text-align: center
+    line-height: 62px
+    color: rgba(81, 80, 118, 1)
+    font-feature-settings: 'pnum' on, 'onum' on
+  &-SlideHeader
+    font-family: "Montserrat-Light"
+    font-weight: 300
+    font-size: 3rem
+    line-height: 39px
+    color: rgba(76, 80, 114, 1)
+    max-width: 340px
+  &-MainText
+    font-family: "Montserrat-Medium"
+    font-weight: 500
+    font-size: 1.6rem
+    line-height: 32px
+    color: rgba(136, 135, 148, 1)
+    max-width: 430px
+  &-ImageWrapper
+    max-width: 285px
+    max-height: 519px
+  &-Image
+    max-width: 285px
+    max-height: 519px
+    vertical-align: middle
+    object-fit: cover
+
+.DiscountedProductList
+  padding-top: 269px
+  padding-right: 130px
+  padding-left: 140px
+  align-items: flex-end
+  &-Item
+.DiscountedProductItem
+  background-color: rgba(247, 247, 250, 1)
+  display: flex
+  flex-direction: column
+  box-sizing: border-box
+  padding-bottom: 35px
+  &-CardHeader
+    width: 350px
+    display: flex
+    align-items: center
+    justify-content: center
+  &-Discount
+  &-CardMainContent
+    margin-top: auto
+  &-ImageWrapper
+    width: 350px
+    height: 305px
+  &-Image
+    vertical-align: middle
+  &-Description
+    padding-left: 40px
+    padding-right: 40px
+    line-height: 24px
+    color: rgba(81, 80, 118, 1)
+    max-width: 270px
+    min-height: 100px
+    max-height: 100px
+    margin-bottom: 11px
+    margin-top: 10px
+  &-CardFooter
+    padding-left: 40px
+    padding-right: 40px
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-Price
+    display: flex
+    align-items: flex-end
+    font-family: "Montserrat-Medium"
+    font-weight: 500
+    font-size: 2rem
+    line-height: 27px
+    color: rgba(81, 80, 118, 0.8)
+    &::before
+      content: attr(data-discounted-products-old-price)
+      font-family: "Montserrat-Medium"
+      font-weight: 500
+      font-size: 1.8rem
+      line-height: 24px
+      color: rgba(81, 80, 118, 0.6)
+      text-decoration-line: line-through
+      margin-right: 16px
+  &_size_small
+    height: 600px
+    > header
+      height: 100px
+      background-color: rgba(81, 80, 118, 0.1)
+      p
+        font-size: 3.6rem
+        line-height: 49px
+        color: rgba(81, 80, 118, 1)
+  &_size_medium
+    height: 700px
+    > header
+      height: 150px
+      background-color: rgba(81, 80, 118, 0.15)
+      p
+        font-family: "Montserrat-Medium"
+        font-weight: 500
+        font-size: 3.6rem
+        line-height: 49px
+        color: rgba(81, 80, 118, 1)
+  &_size_big
+    height: 800px
+    > header
+      height: 200px
+      background-color: rgba(81, 80, 118, 0.2)
+      p
+        font-family: "Montserrat-SemiBold"
+        font-weight: 600
+        font-size: 3.6rem
+        line-height: 49px
+        color: rgba(81, 80, 118, 1)
+
+.DiscountedProductsSlider
+  overflow: hidden // For slider
+  width: 810px !important // For slider
+  height: 521px !important // For slider
+  padding-left: 40px // For slider
+  padding-bottom: 40px // For slider

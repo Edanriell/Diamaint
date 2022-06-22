@@ -1,0 +1,35 @@
+.Pageup
+  display: block
+  opacity: 0
+  width: 70px
+  height: 70px
+  position: fixed
+  bottom: 20%
+  right: 8.8%
+  z-index: 2
+  cursor: pointer
+  box-shadow: 0px 4px 25px rgb(142 128 169 / 20%)
+  background: #515076 url("../img/modules/Scroll/arrow-up.svg") no-repeat center
+  background-size: 50px 50px
+  transition: all 0.25s ease-in-out
+  &:hover
+    background: #38374e url("../img/modules/Scroll/arrow-up.svg") no-repeat center
+    background-size: 50px 50px
+.PageupButtonFadeIn
+  animation: PageupButtonFadeIn 0.25s ease-in-out both
+@keyframes PageupButtonFadeIn 
+  0% 
+    transform: perspective(600px) translateZ(-80px)
+    opacity: 0
+  100% 
+    transform: perspective(600px) translateZ(0)
+    opacity: 1
+.PageupButtonFadeOut
+  animation: PageupButtonFadeOut 0.25s ease-in-out both
+@keyframes PageupButtonFadeOut 
+  0% 
+    transform: perspective(600px) translateZ(0)
+    opacity: 1
+  100% 
+    transform: perspective(600px) translateZ(-80px)
+    opacity: 0

@@ -1,0 +1,118 @@
+.Products
+  padding-top: 580px
+  position: relative
+  &-Content
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      width: 873px
+      height: 790px
+      background-size: 873px 790px
+      top: -280px
+      left: -280px
+      z-index: -1
+      background-image: url("../img/seeds.png")
+      transform: rotate(0deg)
+.ProductList
+  display: flex
+  align-items: flex-end
+  justify-content: center
+  padding-top: 80px
+  &-Item
+    margin-right: 30px
+    &:last-child
+      margin-right: 0
+.ProductItemCard
+  width: 329px
+  height: 521px
+  box-sizing: border-box
+  padding: 62px 20px 55px 20px
+  background: #F7F7FA
+  display: flex
+  flex-direction: column
+  h3
+    padding-left: 18px
+    padding-right: 18px
+  div:nth-of-type(2)
+    padding-left: 18px
+    padding-right: 18px
+  > p
+    padding-left: 18px
+    padding-right: 18px
+  &-ItemName
+    font-size: 2rem
+    line-height: 27px
+    color: rgba(81, 80, 118, 1)
+    order: 3
+    margin-top: 5px
+    max-width: 190px
+  &-ItemLink
+  &-ItemImageWrapper
+    order: 1 !important
+  &-ItemImage
+    vertical-align: middle
+    object-fit: cover
+  &-ItemCategory
+    font-family: "Montserrat-Medium"
+    font-weight: 500
+    font-size: 1.2rem
+    line-height: 24px
+    letter-spacing: 0.23em
+    text-transform: uppercase
+    color: rgba(165, 163, 185, 1)
+    order: 2
+    margin-top: 20px
+  &-ItemFooter
+    display: flex
+    justify-content: space-between
+    align-items: center
+    order: 4
+    margin-bottom: 0
+    margin-top: auto
+  &-ItemPrice
+    font-family: "Montserrat-Medium"
+    font-weight: 500
+    color: rgba(81, 80, 118, 1)
+    font-size: 2rem
+    line-height: 27px
+    &_discount_true
+      font-family: "Montserrat-Medium"
+      font-weight: 500
+      font-size: 2.4rem
+      line-height: 33px
+      color: rgba(81, 80, 118, 0.8)
+      display: flex
+      align-items: flex-end
+      &::before
+        content: attr(data-old-price)
+        font-family: "Montserrat-Medium"
+        font-weight: 500
+        color: rgba(136, 135, 148, 1)
+        font-size: 1.8rem
+        line-height: 30px
+        color: rgba(81, 80, 118, 0.6)
+        text-decoration-line: line-through
+        margin-right: 16px
+  &_size_large
+    width: 380px
+    height: 600px
+  &_discount_true
+    position: relative
+    h3
+      padding-left: 24px
+      padding-right: 24px
+    div:nth-of-type(2)
+      padding-left: 24px
+      padding-right: 24px
+    > p
+      padding-left: 24px
+      padding-right: 24px
+    &::before
+      content: ""
+      position: absolute
+      top: 20px
+      left: 20px
+      width: 66px
+      height: 66px
+      background: no-repeat url("../img/icons/percents.svg") center

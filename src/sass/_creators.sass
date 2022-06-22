@@ -1,0 +1,119 @@
+.Creators
+  padding-top: 144px
+  &-Content
+    display: flex
+    justify-content: space-between
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      top: -10px
+      left: 520px
+      width: 430px
+      height: 427px
+      background-image: url("../img/dandelionSmall.png")
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 430px 427px
+      z-index: -1
+  &-ContentColumn
+    display: flex
+    flex-direction: column
+  &-Header
+    max-width: 340px
+    margin-bottom: 55px
+  &-Name
+    font-family: "Montserrat-Medium"
+    font-weight: 500
+    font-size: 2rem
+    line-height: 40px
+    color: rgba(81, 80, 118, 1)
+    margin-bottom: 14px
+  &-About
+    font-family: "Montserrat-Medium"
+    font-weight: 500
+    font-size: 1.6rem
+    line-height: 29px
+    color: rgba(136, 135, 148, 1)
+    max-width: 665px
+    margin-bottom: 39px
+  &-CreatorQuote
+    font-family: "Montserrat-SemiBold"
+    font-weight: 600
+    font-size: 1.8rem
+    line-height: 29px
+    color: rgba(136, 135, 148, 1)
+    max-width: 600px
+    display: flex
+    margin-bottom: 74px
+    &::before
+      content: "“"
+      font-size: 6rem
+      line-height: 6rem
+      font-family: "Circe-Bold"
+      font-weight: 700
+      margin-right: 42px
+.ImageList
+  display: flex
+  &-Item
+    margin-right: 65px
+    position: relative
+    opacity: 0.5
+    &::before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      height: 6px
+      width: 153px
+      background: #515076c7
+      pointer-events: none
+      transition: all 0.12s ease-in-out
+    &:hover::before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      height: 173px
+      width: 153px
+      background: #515076c7
+      pointer-events: none
+      transition: all 0.12s ease-in-out
+    &:hover:after
+      content: attr(data-image-description)
+      font-family: "Montserrat-SemiBold"
+      font-weight: 600
+      color: white
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      line-height: 20px
+      pointer-events: none
+      transition: all 0.12s ease-in-out
+    &:last-child
+      margin-right: 0
+  &-Image
+    vertical-align: middle
+    object-fit: cover
+    width: 153px
+    height: 173px
+    border-top: 6px solid #515076
+    box-sizing: border-box
+    cursor: pointer
+    transition: all 0.12s ease-in-out
+    user-select: none
+  &-ActiveImage
+    opacity: 1 !important
+    transition: all 0.12s ease-in-out
+    user-select: none
+.CreatorsMainImage
+  vertical-align: middle
+  object-fit: cover
+  width: 603px
+  height: 671px
+  transition: all 0.12s ease-in-out
+  &-Wrapper
+    margin-top: 116px
+    position: relative
+    transition: all 0.25s ease-in-out

@@ -1,0 +1,44 @@
+$icons: "../img/icons/facebook.svg" 1, "../img/icons/instagram.svg" 2
+
+@each $iconUrl, $itemIndex in $icons
+  .SocialLinkList
+    &-Item:nth-of-type(#{$itemIndex})
+      > a
+        background: url($iconUrl)
+        display: block
+
+.Footer
+  padding-top: 245px
+  padding-bottom: 300px
+  &-Wrapper
+.Contacts
+  width: 531px
+  height: 345px
+  box-sizing: border-box
+  padding: 50px 50px 66px 87px
+  background: rgba(247, 247, 250, 1)
+  border-top: 6px solid #515076
+  &-Header
+    max-width: 320px
+    margin-bottom: 33px
+  &-Content
+.PhoneNumberAndAddress
+  font-family: "Montserrat-Medium"
+  font-weight: 500
+  font-size: 1.6rem
+  line-height: 32px
+  color: rgba(130, 130, 130, 1)
+  display: flex
+  flex-direction: column
+  height: 86px
+  justify-content: space-between
+  &-PhoneNumber
+  &-Address
+.SocialLinkList
+  display: flex
+  margin-top: 15px
+  &-Item
+    margin-right: 25px
+  &-Link
+    width: 22px
+    height: 19px
